@@ -1,0 +1,216 @@
+*{
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth;
+}
+
+body {
+  margin: 1;
+  font-family: 'roboto', sans-serif;
+}
+
+h1 { font-size: 3.5rem;}
+h2 { font-size: 2.5rem;}
+h3 {font-size: 2rem;}
+p {font-size: small;}
+ul {list-style: none;}
+li { font-size: 1.25em;}
+
+.color-acento {
+  color: blueviolet;
+}
+
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px black;
+  color: white;
+  background-color: blueviolet;
+}
+
+button:hover {
+  background-color: rgb(159, 99, 159);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 25px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: x-large;
+}
+
+header .container{
+display: flex;
+flex-direction: column ;
+align-items: center;
+}
+
+header nav{ 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a{
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: blueviolet;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 90vh;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 0, 0, 0.5),
+    rgb(0, 0, 0, 0.5)
+    )
+    ,url(PNG_transparency_demonstration_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#hero button {font-size: 1.75rem ;}
+
+#somos-proya .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#nuestros-programas {
+  background-color: rgb(30, 30, 30) ;
+  color: white;
+  text-align: center;
+}
+
+#nuestros-programas .container {
+padding: 150px 0px;
+}
+
+#nuestros-programas h2{
+  margin-top: 0;
+  font-size: 3.5em;
+}
+
+#nuestros-programas p {
+  display: none;
+}
+
+#nuestros-programas .carta {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  margin: 12px;
+  border-radius: 10px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 0, 0, 0.5),
+    rgb(0, 0, 0, 0.5)
+    )
+    ,url(download-1.jpg);
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 0, 0, 0.5),
+    rgb(0, 0, 0, 0.5)
+    )
+    ,url(PNG_transparency_demonstration_1.png);
+
+}
+
+.carta:nth-child(3){
+  background-image: linear-gradient(
+    0deg,
+    rgb(0, 0, 0, 0.5),
+    rgb(0, 0, 0, 0.5)
+    )
+    ,url(PNG_transparency_demonstration_1.png);
+}
+
+#caracteristicas .container{
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#caracteristicas li{
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+#final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 80vh;
+}
+
+#final h2 { font-size: 3em;}
+
+#final button {font-size: 5vh;
+  box-shadow: white 2px 2px 2px;
+}
+
+footer {
+  background-color: rgb(202, 211, 211);
+  }
+
+footer p {
+  margin: 0;
+  color: rgb(80, 79, 79);
+}
+
+footer .container {
+height: 150px;
+padding: 12px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+
+@media (min-width: 720px){
+  header .container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+header nav{
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-right: 20px;
+}
